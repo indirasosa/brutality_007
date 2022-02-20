@@ -1,0 +1,41 @@
+//importaciones
+@import "colores";
+//header
+body {
+    header {
+        background-color: $negro;
+        div {
+            display: flex;
+            flex-direction: row;
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    list-style-type: none;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 25%;
+                    li {
+                        padding: 5px 10px 7px 10px;
+                        margin: 2px 2% 2px 2%;
+                        list-style-type: none;
+                        a {
+                            color: $blanco;
+                            text-decoration: none;
+                        &:hover {
+                            color: $grisclaro;
+                        }
+                        &:active {
+                            color: $grismedio;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
