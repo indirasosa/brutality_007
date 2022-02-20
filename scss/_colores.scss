@@ -1,4 +1,10 @@
+//paleta de colores
 $negro: black;
 $blanco: white;
 $grisclaro: #e7e5e5;
 $grismedio: #a3a3a3;
+//mixin
+@mixin titulos ($color, $fondo) {
+    color: $color;
+    background-color: $fondo;
+}

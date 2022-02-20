@@ -1,0 +1,19 @@
+//mixin 
+@mixin padding ($padding1, $padding2, $padding3) {
+    padding-left: $padding1;
+    padding-top: $padding2;
+    padding-bottom: $padding3;
+}
+@mixin flex ($flex, $direction, $justify) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+@mixin paddingx ($paddingl, $paddingr) {
+    padding-left: $paddingl;
+    padding-right: $paddingr;
+}
+@mixin paddingy ($paddingt, $paddingb) {
+    padding-top: $paddingt;
+    padding-bottom: $paddingb;
+}
