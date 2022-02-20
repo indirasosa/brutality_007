@@ -95,6 +95,40 @@ body footer div {
 body footer div p {
   font-size: 12px; }
 
+body .mainProductos h1 {
+  color: white;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 18px;
+  padding-left: 3%; }
+
+body .mainProductos section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+  body .mainProductos section article {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body .mainProductos section article div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body .mainProductos section article div h2 {
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+
 * {
   margin: 0%;
   padding: 0%; }

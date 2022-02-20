@@ -9,6 +9,10 @@
     flex-direction: $direction;
     justify-content: $justify;
 }
+@mixin flexflow ($flow, $wrap) {
+    display: flex;
+    flex-flow: row wrap;
+}
 @mixin paddingx ($paddingl, $paddingr) {
     padding-left: $paddingl;
     padding-right: $paddingr;

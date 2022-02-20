@@ -1,0 +1,34 @@
+//importaciones
+@import "colores";
+@import "estructura";
+//Main productos
+body {
+    .mainProductos {
+        h1 {
+            @include titulos ($blanco, $negro)
+            @include paddingy (1rem, 1rem)
+            font-size: 18px;
+            padding-left: 3%;
+        }
+        section {
+            @include flexflow (flex, row wrap)
+            justify-content: center;
+            @include paddingy (1rem,2rem)
+            article{
+                @include paddingy (1rem,1rem)
+                @include paddingx (3rem,3rem)
+                @include flex (flex, row, center)
+                div {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h2 {
+                        font-size: 18px;
+                        @include flex (flex, row, center)
+                        @include paddingy (10px, 10px)
+                    }
+                }
+            }
+        }
+    }
+}
