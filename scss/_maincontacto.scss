@@ -1,0 +1,25 @@
+//importaciones
+@import "colores";
+@import "estructura";
+//Main contactos
+body {
+    .mainContacto {
+        h1 {
+            @include titulos ($blanco, $negro)
+            @include paddingy (1rem, 1rem)
+            font-size: 18px;
+            padding-left: 3%;
+        }
+        section {
+            form {
+                padding-left: 3%;
+                @include paddingy (2rem, 8rem)
+                p {
+                    font-size:16px;
+                    @include paddingy (5px,5px)
+                }
+            }
+        }
+        
+    }
+}

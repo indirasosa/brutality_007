@@ -27,6 +27,37 @@ body header {
             body header div nav ul li a:active {
               color: #a3a3a3; }
 
+body footer div {
+  color: white;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start; }
+  body footer div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body footer div div h3 {
+      font-size: 16px;
+      font-style: normal;
+      padding-bottom: 10px; }
+    body footer div div a {
+      color: white;
+      text-decoration: none; }
+    body footer div div img {
+      width: 60px; }
+    body footer div div p {
+      font-size: 14px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+
+body footer div p {
+  font-size: 12px; }
+
 body .mainIndex div {
   display: flex;
   justify-content: center;
@@ -64,37 +95,6 @@ body .mainIndex section div {
         padding-top: 10px;
         padding-bottom: 10px; }
 
-body footer div {
-  color: white;
-  background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: flex-start; }
-  body footer div div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    body footer div div h3 {
-      font-size: 16px;
-      font-style: normal;
-      padding-bottom: 10px; }
-    body footer div div a {
-      color: white;
-      text-decoration: none; }
-    body footer div div img {
-      width: 60px; }
-    body footer div div p {
-      font-size: 14px;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-
-body footer div p {
-  font-size: 12px; }
-
 body .mainProductos h1 {
   color: white;
   background-color: black;
@@ -128,6 +128,23 @@ body .mainProductos section {
         justify-content: center;
         padding-top: 10px;
         padding-bottom: 10px; }
+
+body .mainContacto h1 {
+  color: white;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 18px;
+  padding-left: 3%; }
+
+body .mainContacto section form {
+  padding-left: 3%;
+  padding-top: 2rem;
+  padding-bottom: 8rem; }
+  body .mainContacto section form p {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
 
 * {
   margin: 0%;
