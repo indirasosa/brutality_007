@@ -22,6 +22,16 @@ body {
                     display:flex;
                     flex-direction: column;
                     justify-content: center;
+                    a {
+                        text-decoration: none;
+                        color: $negro;
+                        &:hover {
+                            color: $grisoscuro;
+                        }
+                        &:active {
+                            color: $grismedio;
+                        }
+                    }
                     h2 {
                         font-size: 18px;
                         @include flex (flex, row, center)

@@ -3,6 +3,7 @@ $negro: black;
 $blanco: white;
 $grisclaro: #e7e5e5;
 $grismedio: #a3a3a3;
+$grisoscuro: rgb(68, 67, 67);
 //mixin
 @mixin titulos ($color, $fondo) {
     color: $color;

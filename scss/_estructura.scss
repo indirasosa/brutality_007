@@ -13,6 +13,10 @@
     display: flex;
     flex-flow: row wrap;
 }
+@mixin flexcenter ($flex, $center) {
+    display: $flex;
+    justify-content: $center;
+}
 @mixin paddingx ($paddingl, $paddingr) {
     padding-left: $paddingl;
     padding-right: $paddingr;
