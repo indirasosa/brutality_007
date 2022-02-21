@@ -1,1 +1,3 @@
 Proyecto de pagina web Brutality, es una tienda online que también contiene info sobre la marca
+Para este desafío rehice mi página sin Bootstrap porque me pareció mejor para utilizar SCSS. Me resultaron muy útiles las herramientas como @mixin y $variables e @import. Al principio traté de hacerlo con Bootstrap pero me pasó que al añadirle stios propios a veces se me rompía el código y no podía usar bien SCSS, entonces para aprender a usarlo mejor decidí cambiar. 
+Con respecto al SEO comprimí las imágenes, utilicé sólo las necesarias. A los logos e íconos los transformé en SVG. Utilicé las meta etiquqetas de keywords y description y también edité odos los títulos. 
