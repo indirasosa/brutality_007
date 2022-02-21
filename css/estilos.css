@@ -1,232 +1,1274 @@
-body header {
-  background-color: black; }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
   body header div {
-    display: flex;
-    flex-direction: row; }
-    body header div nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-      body header div nav ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: center;
-        align-items: center;
-        padding-left: 25%; }
-        body header div nav ul li {
-          padding: 5px 10px 7px 10px;
-          margin: 2px 2% 2px 2%;
-          list-style-type: none; }
-          body header div nav ul li a {
-            color: white;
-            text-decoration: none; }
-            body header div nav ul li a:hover {
-              color: #e7e5e5; }
-            body header div nav ul li a:active {
-              color: #a3a3a3; }
-
-body footer div {
-  color: white;
-  background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: flex-start; }
-  body footer div div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    body footer div div h3 {
-      font-size: 16px;
-      font-style: normal;
-      padding-bottom: 10px; }
-    body footer div div a {
-      color: white;
-      text-decoration: none; }
-    body footer div div img {
-      width: 60px; }
-    body footer div div p {
-      font-size: 14px;
-      padding-top: 5px;
-      padding-bottom: 5px; }
+    body header div a {
+      align-items: center; }
+      body header div a img {
+        width: 300px; } }
 
-body footer div p {
-  font-size: 12px; }
+@media only screen and (max-width: 480px) {
+  body header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body header div a {
+      align-items: center; }
+      body header div a img {
+        width: 150px; }
+    body header div nav {
+      display: flex;
+      flex: row;
+      justify-content: center; }
+      body header div nav ul li {
+        padding-left: 1px;
+        padding-right: 1px; }
+        body header div nav ul li a {
+          font-size: 12px; } }
 
-body .mainIndex div {
-  display: flex;
-  justify-content: center;
-  background-color: black; }
-
-body .mainIndex section h1 {
-  font-size: 18px;
-  color: white;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-body .mainIndex section div {
-  background-color: white; }
-  body .mainIndex section div article {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body footer div {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around; }
-    body .mainIndex section div article div {
+    justify-content: space-around;
+    align-items: flex-start; }
+    body footer div div {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 2rem;
-      padding-bottom: 3rem; }
-      body .mainIndex section div article div h2 {
-        font-size: 18px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center; }
+      body footer div div h3 {
+        font-size: 14px;
+        font-style: normal;
         padding-bottom: 10px; }
+      body footer div div a {
+        color: white;
+        text-decoration: none; }
+      body footer div div img {
+        width: 40px; }
+      body footer div div p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  body footer div p {
+    font-size: 10px; } }
 
-body .mainProductos h1 {
-  color: white;
-  background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 18px;
-  padding-left: 3%; }
-
-body .mainProductos section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
-  body .mainProductos section article {
+@media only screen and (max-width: 480px) {
+  body footer div {
+    color: white;
+    background-color: black;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body footer div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center; }
+      body footer div div h3 {
+        font-size: 14px;
+        font-style: normal;
+        padding-bottom: 10px; }
+      body footer div div a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px; }
+      body footer div div img {
+        width: 40px; }
+      body footer div div p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  body footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body footer div p {
+      font-size: 10px; } }
+
+@media only screen and (min-width: 650px) and (max-width: 1023px) {
+  body .mainIndex div {
+    display: flex;
+    justify-content: center;
+    background-color: black; }
+    body .mainIndex div #portada {
+      width: 600px; }
+  body .mainIndex section h1 {
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  body .mainIndex section div {
+    background-color: white; }
+    body .mainIndex section div article {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body .mainIndex section div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem; }
+        body .mainIndex section div article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 649px) {
+  body .mainIndex div {
+    display: flex;
+    justify-content: center;
+    background-color: black; }
+    body .mainIndex div #portada {
+      width: 300px; }
+  body .mainIndex section h1 {
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  body .mainIndex section div {
+    background-color: white; }
+    body .mainIndex section div article {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body .mainIndex section div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem; }
+        body .mainIndex section div article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (max-width: 319px) {
+  body .mainIndex div {
+    display: flex;
+    justify-content: center;
+    background-color: black; }
+    body .mainIndex div #portada {
+      width: 200px; }
+  body .mainIndex section h1 {
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  body .mainIndex section div {
+    background-color: white; }
+    body .mainIndex section div article {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body .mainIndex section div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem; }
+        body .mainIndex section div article div h2 {
+          font-size: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+        body .mainIndex section div article div img {
+          width: 170px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body .mainProductos h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainProductos section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    body .mainProductos section article {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .mainProductos section article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .mainProductos section article div a {
+          text-decoration: none;
+          color: black; }
+          body .mainProductos section article div a:hover {
+            color: #444343; }
+          body .mainProductos section article div a:active {
+            color: #a3a3a3; }
+        body .mainProductos section article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  body .mainProductos h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainProductos section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    body .mainProductos section article {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .mainProductos section article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .mainProductos section article div img {
+          width: 170px; }
+        body .mainProductos section article div a {
+          text-decoration: none;
+          color: black; }
+          body .mainProductos section article div a:hover {
+            color: #444343; }
+          body .mainProductos section article div a:active {
+            color: #a3a3a3; }
+        body .mainProductos section article div h2 {
+          font-size: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body .mainNosotros h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainNosotros section div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    body .mainNosotros section div div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros div {
     display: flex;
     flex-direction: row;
     justify-content: center; }
-    body .mainProductos section article div {
+    body .mainNosotros div p {
+      width: 70%;
+      font-size: 12px;
+      padding-top: 0rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body .mainNosotros article h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 12px; }
+    body .mainNosotros article div {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-bottom: 2rem; } }
+
+@media only screen and (max-width: 480px) {
+  body .mainNosotros h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainNosotros section div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    body .mainNosotros section div div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+      body .mainNosotros section div div img {
+        width: 170px; }
+  body .mainNosotros div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body .mainNosotros div p {
+      width: 70%;
+      font-size: 10px;
+      padding-top: 0rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body .mainNosotros article h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 12px; }
+    body .mainNosotros article div {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-bottom: 2rem; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body .mainContacto h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainContacto section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    margin: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem; }
+    body .mainContacto section form p {
+      font-size: 16px;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
+@media only screen and (max-width: 480px) {
+  body .mainContacto h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainContacto section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    margin: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    body .mainContacto section form p {
+      font-size: 12px;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
+@media only screen and (min-width: 650px) and (max-width: 1023px) {
+  body .mainBrutlag h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainBrutlag section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    body .mainBrutlag section div {
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      body .mainBrutlag section div div {
+        border: solid black 1px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        body .mainBrutlag section div div h2 {
+          font-size: 16px;
+          padding: 10px;
+          margin-bottom: 10px; }
+        body .mainBrutlag section div div p {
+          font-size: 16px;
+          padding-bottom: 10px;
+          padding-left: 5px; }
+        body .mainBrutlag section div div button {
+          color: white;
+          background-color: black;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          padding: 5px; }
+    body .mainBrutlag section article img {
+      width: 300px; } }
+
+@media only screen and (max-width: 649px) {
+  body .mainBrutlag h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainBrutlag section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem; }
+    body .mainBrutlag section div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 1rem; }
+      body .mainBrutlag section div div {
+        border: solid black 1px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        body .mainBrutlag section div div h2 {
+          font-size: 12px;
+          padding: 10px;
+          margin-bottom: 10px; }
+        body .mainBrutlag section div div p {
+          font-size: 10px;
+          padding-bottom: 10px;
+          padding-left: 5px; }
+        body .mainBrutlag section div div button {
+          color: white;
+          background-color: black;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          padding: 5px; }
+    body .mainBrutlag section article {
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-      body .mainProductos section article div a {
-        text-decoration: none;
-        color: black; }
-        body .mainProductos section article div a:hover {
-          color: #444343; }
-        body .mainProductos section article div a:active {
-          color: #a3a3a3; }
-      body .mainProductos section article div h2 {
-        font-size: 18px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 10px;
+      align-items: center; }
+      body .mainBrutlag section article img {
+        width: 200px; } }
+
+body header {
+  background-color: black; }
+  @media only screen and (min-width: 1024px) {
+    body header div {
+      display: flex;
+      flex-direction: row; } }
+  body header div nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    body header div nav ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      padding-left: 2%; }
+      body header div nav ul li {
+        padding: 5px 10px 7px 10px;
+        margin: 2px 2% 2px 2%;
+        list-style-type: none; }
+        body header div nav ul li a {
+          color: white;
+          text-decoration: none; }
+          body header div nav ul li a:hover {
+            color: #e7e5e5; }
+          body header div nav ul li a:active {
+            color: #a3a3a3; }
+
+@media only screen and (min-width: 1024px) {
+  body footer div {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: flex-start; }
+    body footer div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body footer div div h3 {
+        font-size: 16px;
+        font-style: normal;
         padding-bottom: 10px; }
-
-body .mainContacto h1 {
-  color: white;
-  background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 18px;
-  padding-left: 3%; }
-
-body .mainContacto section form {
-  padding-left: 3%;
-  padding-top: 2rem;
-  padding-bottom: 8rem; }
-  body .mainContacto section form p {
-    font-size: 16px;
-    padding-top: 5px;
-    padding-bottom: 5px; }
-
-body .mainNosotros h1 {
-  color: white;
-  background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 18px;
-  padding-left: 3%; }
-
-body .mainNosotros section div {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
-  body .mainNosotros section div div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-
-body .mainNosotros div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-  body .mainNosotros div p {
-    width: 70%;
-    font-size: 16px;
-    padding-top: 0rem;
-    padding-bottom: 2rem; }
-
-body .mainNosotros article h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 18px; }
-
-body .mainNosotros article div {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
-
-body .mainBrutlag h1 {
-  color: white;
-  background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 18px;
-  padding-left: 3%; }
-
-body .mainBrutlag section {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-  body .mainBrutlag section div {
-    padding-left: 2rem;
-    padding-right: 2rem; }
-    body .mainBrutlag section div div {
-      border: solid black 1px;
-      padding-left: 10px;
-      padding-right: 10px; }
-      body .mainBrutlag section div div h2 {
-        font-size: 16px;
-        padding: 10px;
-        margin-bottom: 10px; }
-      body .mainBrutlag section div div p {
-        font-size: 16px;
-        padding-bottom: 10px;
-        padding-left: 5px; }
-      body .mainBrutlag section div div button {
+      body footer div div a {
         color: white;
-        background-color: black;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        padding: 5px; }
+        text-decoration: none; }
+      body footer div div img {
+        width: 60px; }
+      body footer div div p {
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  body footer div p {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 1024px) {
+  body .mainIndex div {
+    display: flex;
+    justify-content: center;
+    background-color: black; }
+  body .mainIndex section h1 {
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  body .mainIndex section div {
+    background-color: white; }
+    body .mainIndex section div article {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body .mainIndex section div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem; }
+        body .mainIndex section div article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (min-width: 1024px) {
+  body .mainProductos h1 {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainProductos section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    body .mainProductos section article {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .mainProductos section article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .mainProductos section article div a {
+          text-decoration: none;
+          color: black; }
+          body .mainProductos section article div a:hover {
+            color: #444343; }
+          body .mainProductos section article div a:active {
+            color: #a3a3a3; }
+        body .mainProductos section article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (min-width: 1024px) {
+  body .mainContacto h1 {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainContacto section form {
+    padding-left: 3%;
+    padding-top: 2rem;
+    padding-bottom: 8rem; }
+    body .mainContacto section form p {
+      font-size: 16px;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
+@media only screen and (min-width: 1024px) {
+  body .mainNosotros h1 {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainNosotros section div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    body .mainNosotros section div div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body .mainNosotros div p {
+      width: 70%;
+      font-size: 16px;
+      padding-top: 0rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros article h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 18px; }
+  body .mainNosotros article div {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem; } }
+
+@media only screen and (min-width: 1024px) {
+  body .mainBrutlag h1 {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainBrutlag section {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    body .mainBrutlag section div {
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      body .mainBrutlag section div div {
+        border: solid black 1px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        body .mainBrutlag section div div h2 {
+          font-size: 16px;
+          padding: 10px;
+          margin-bottom: 10px; }
+        body .mainBrutlag section div div p {
+          font-size: 16px;
+          padding-bottom: 10px;
+          padding-left: 5px; }
+        body .mainBrutlag section div div button {
+          color: white;
+          background-color: black;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          padding: 5px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body header div a {
+      align-items: center; }
+      body header div a img {
+        width: 300px; } }
+
+@media only screen and (max-width: 480px) {
+  body header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body header div a {
+      align-items: center; }
+      body header div a img {
+        width: 150px; }
+    body header div nav {
+      display: flex;
+      flex: row;
+      justify-content: center; }
+      body header div nav ul li {
+        padding-left: 1px;
+        padding-right: 1px; }
+        body header div nav ul li a {
+          font-size: 12px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body footer div {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+    body footer div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center; }
+      body footer div div h3 {
+        font-size: 14px;
+        font-style: normal;
+        padding-bottom: 10px; }
+      body footer div div a {
+        color: white;
+        text-decoration: none; }
+      body footer div div img {
+        width: 40px; }
+      body footer div div p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  body footer div p {
+    font-size: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  body footer div {
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body footer div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center; }
+      body footer div div h3 {
+        font-size: 14px;
+        font-style: normal;
+        padding-bottom: 10px; }
+      body footer div div a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px; }
+      body footer div div img {
+        width: 40px; }
+      body footer div div p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  body footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body footer div p {
+      font-size: 10px; } }
+
+@media only screen and (min-width: 650px) and (max-width: 1023px) {
+  body .mainIndex div {
+    display: flex;
+    justify-content: center;
+    background-color: black; }
+    body .mainIndex div #portada {
+      width: 600px; }
+  body .mainIndex section h1 {
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  body .mainIndex section div {
+    background-color: white; }
+    body .mainIndex section div article {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body .mainIndex section div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem; }
+        body .mainIndex section div article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 649px) {
+  body .mainIndex div {
+    display: flex;
+    justify-content: center;
+    background-color: black; }
+    body .mainIndex div #portada {
+      width: 300px; }
+  body .mainIndex section h1 {
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  body .mainIndex section div {
+    background-color: white; }
+    body .mainIndex section div article {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body .mainIndex section div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem; }
+        body .mainIndex section div article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (max-width: 319px) {
+  body .mainIndex div {
+    display: flex;
+    justify-content: center;
+    background-color: black; }
+    body .mainIndex div #portada {
+      width: 200px; }
+  body .mainIndex section h1 {
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  body .mainIndex section div {
+    background-color: white; }
+    body .mainIndex section div article {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body .mainIndex section div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem; }
+        body .mainIndex section div article div h2 {
+          font-size: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+        body .mainIndex section div article div img {
+          width: 170px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body .mainProductos h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainProductos section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    body .mainProductos section article {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .mainProductos section article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .mainProductos section article div a {
+          text-decoration: none;
+          color: black; }
+          body .mainProductos section article div a:hover {
+            color: #444343; }
+          body .mainProductos section article div a:active {
+            color: #a3a3a3; }
+        body .mainProductos section article div h2 {
+          font-size: 18px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  body .mainProductos h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainProductos section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    body .mainProductos section article {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .mainProductos section article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .mainProductos section article div img {
+          width: 170px; }
+        body .mainProductos section article div a {
+          text-decoration: none;
+          color: black; }
+          body .mainProductos section article div a:hover {
+            color: #444343; }
+          body .mainProductos section article div a:active {
+            color: #a3a3a3; }
+        body .mainProductos section article div h2 {
+          font-size: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body .mainNosotros h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainNosotros section div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    body .mainNosotros section div div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body .mainNosotros div p {
+      width: 70%;
+      font-size: 12px;
+      padding-top: 0rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body .mainNosotros article h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 12px; }
+    body .mainNosotros article div {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-bottom: 2rem; } }
+
+@media only screen and (max-width: 480px) {
+  body .mainNosotros h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainNosotros section div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    body .mainNosotros section div div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+      body .mainNosotros section div div img {
+        width: 170px; }
+  body .mainNosotros div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body .mainNosotros div p {
+      width: 70%;
+      font-size: 10px;
+      padding-top: 0rem;
+      padding-bottom: 2rem; }
+  body .mainNosotros article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body .mainNosotros article h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 12px; }
+    body .mainNosotros article div {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-bottom: 2rem; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body .mainContacto h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainContacto section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    margin: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem; }
+    body .mainContacto section form p {
+      font-size: 16px;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
+@media only screen and (max-width: 480px) {
+  body .mainContacto h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainContacto section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    margin: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    body .mainContacto section form p {
+      font-size: 12px;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
+@media only screen and (min-width: 650px) and (max-width: 1023px) {
+  body .mainBrutlag h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 3%; }
+  body .mainBrutlag section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    body .mainBrutlag section div {
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      body .mainBrutlag section div div {
+        border: solid black 1px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        body .mainBrutlag section div div h2 {
+          font-size: 16px;
+          padding: 10px;
+          margin-bottom: 10px; }
+        body .mainBrutlag section div div p {
+          font-size: 16px;
+          padding-bottom: 10px;
+          padding-left: 5px; }
+        body .mainBrutlag section div div button {
+          color: white;
+          background-color: black;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          padding: 5px; }
+    body .mainBrutlag section article img {
+      width: 300px; } }
+
+@media only screen and (max-width: 649px) {
+  body .mainBrutlag h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    padding-left: 3%; }
+  body .mainBrutlag section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem; }
+    body .mainBrutlag section div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 1rem; }
+      body .mainBrutlag section div div {
+        border: solid black 1px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        body .mainBrutlag section div div h2 {
+          font-size: 12px;
+          padding: 10px;
+          margin-bottom: 10px; }
+        body .mainBrutlag section div div p {
+          font-size: 10px;
+          padding-bottom: 10px;
+          padding-left: 5px; }
+        body .mainBrutlag section div div button {
+          color: white;
+          background-color: black;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          padding: 5px; }
+    body .mainBrutlag section article {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .mainBrutlag section article img {
+        width: 200px; } }
 
 * {
   margin: 0%;

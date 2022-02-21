@@ -4,37 +4,39 @@
 //footer
 body {
     footer {
-        div {
-            @include titulos ($blanco, $negro)
-            @include paddingy (1rem, 1rem)
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            align-items: flex-start;
+        @media  only screen and (min-width:1024px) {
             div {
-                @include flex (flex, column, center)
-                align-items: center;
-                h3 {
-                    font-size: 16px;
-                    font-style: normal;
-                    padding-bottom: 10px;
-                }
-                a{
-                    color: $blanco;
-                    text-decoration: none;
-                }
-                img {
-                    width: 60px;
-                }
-                p {
-                    font-size: 14px;
-                    @include paddingy (5px, 5px)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+                align-items: flex-start;
+                div {
+                    @include flex (flex, column, center)
+                    align-items: center;
+                    h3 {
+                        font-size: 16px;
+                        font-style: normal;
+                        padding-bottom: 10px;
+                    }
+                    a{
+                        color: $blanco;
+                        text-decoration: none;
+                    }
+                    img {
+                        width: 60px;
+                    }
+                    p {
+                        font-size: 14px;
+                        @include paddingy (5px, 5px)
+                    }
                 }
             }
-        }
-        div {
-            p {
-                font-size: 12px;
+            div {
+                p {
+                    font-size: 12px;
+                }
             }
         }
     }

@@ -2,32 +2,34 @@
 @import "estructura";
 body {
     .mainIndex {
-        div {
-            display: flex;
-            justify-content: center;
-            background-color: $negro;
-        }
-        section {
-            h1 {
-                font-size: 18px;
-                @include titulos ($blanco, $negro)
-                @include flex (flex, row, center)
-                @include paddingy (1rem, 1rem)
-            }
+        @media  only screen and (min-width:1024px) {
             div {
-                background-color: $blanco;
-                article {
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-around;
-                    div {
-                        @include flex (flex, column, center)
-                        @include paddingx (1rem,1rem)
-                        @include paddingy (2rem, 3rem)
-                        h2 {
-                            font-size: 18px;
-                            @include flex (flex, row, center)
-                            @include paddingy (10px, 10px)
+                display: flex;
+                justify-content: center;
+                background-color: $negro;
+            }
+            section {
+                h1 {
+                    font-size: 18px;
+                    @include titulos ($blanco, $negro)
+                    @include flex (flex, row, center)
+                    @include paddingy (1rem, 1rem)
+                }
+                div {
+                    background-color: $blanco;
+                    article {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-around;
+                        div {
+                            @include flex (flex, column, center)
+                            @include paddingx (1rem,1rem)
+                            @include paddingy (2rem, 3rem)
+                            h2 {
+                                font-size: 18px;
+                                @include flex (flex, row, center)
+                                @include paddingy (10px, 10px)
+                            }
                         }
                     }
                 }

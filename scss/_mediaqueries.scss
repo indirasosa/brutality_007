@@ -1,0 +1,568 @@
+//import
+
+@import  "estructura";
+
+//estilos media queries
+//estilos header
+body {
+    header {
+        div {
+            //tablet
+            @media only screen and (min-width: 481px) and  (max-width: 1023px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                a {
+                    align-items: center;
+                    img {
+                    width: 300px;
+                    }
+                }
+            }
+            //mobile
+            @media only screen and (max-width: 480px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                a {
+                    align-items: center;
+                    img {
+                        width: 150px;
+                    }
+                }
+                nav {
+                    display: flex;
+                    flex: row;
+                    justify-content: center;
+                    ul {
+                        li {
+                            @include paddingx (1px,1px)
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Estilos footer
+body {
+    footer {
+        //tablet
+        @media only screen and (min-width: 481px) and  (max-width: 1023px) {
+            div {
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                div {
+                    @include flex (flex, column, center)
+                    @include paddingx (10px, 10px)
+                    align-items: center;
+                    h3 {
+                        font-size: 14px;
+                        font-style: normal;
+                        padding-bottom: 10px;
+                    }
+                    a{
+                        color: $blanco;
+                        text-decoration: none;
+                    }
+                    img {
+                        width: 40px;
+                    }
+                    p {
+                        font-size: 12px;
+                        @include paddingy (5px, 5px)
+                    }
+                }
+            }
+            div {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+        //mobile 
+        @media only screen and (max-width: 480px) {
+            div {
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                div {
+                    @include flex (flex, column, center)
+                    @include paddingx (10px, 10px)
+                    align-items: center;
+                    h3 {
+                        font-size: 14px;
+                        font-style: normal;
+                        padding-bottom: 10px;
+                    }
+                    a{
+                        color: $blanco;
+                        text-decoration: none;
+                        font-size: 12px;
+                    }
+                    img {
+                        width: 40px;
+                    }
+                    p {
+                        font-size: 12px;
+                        @include paddingy (5px, 5px)
+                    }
+                }
+            }
+            div {
+                @include flex (flex, column, center)
+                align-items: center;
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+// Estilos main index
+body {
+    .mainIndex {
+        @media only screen and (min-width: 650px) and  (max-width: 1023px) {
+            div {
+                display: flex;
+                justify-content: center;
+                background-color: $negro;
+                #portada  {
+                    width: 600px;
+                }
+            }
+            section {
+                h1 {
+                    font-size: 18px;
+                    @include titulos ($blanco, $negro)
+                    @include flex (flex, row, center)
+                    @include paddingy (1rem, 1rem)
+                }
+                div {
+                    background-color: $blanco;
+                    article {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-around;
+                        div {
+                            @include flex (flex, column, center)
+                            @include paddingx (1rem,1rem)
+                            @include paddingy (2rem, 3rem)
+                            h2 {
+                                font-size: 18px;
+                                @include flex (flex, row, center)
+                                @include paddingy (10px, 10px)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //mobile horizontal
+        @media only screen and (min-width:320px) and (max-width: 649px)  {
+            div {
+                display: flex;
+                justify-content: center;
+                background-color: $negro;
+                #portada  {
+                    width: 300px;
+                }
+            }
+            section {
+                h1 {
+                    font-size: 12px;
+                    @include titulos ($blanco, $negro)
+                    @include flex (flex, row, center)
+                    @include paddingy (1rem, 1rem)
+                }
+                div {
+                    background-color: $blanco;
+                    article {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-around;
+                        div {
+                            @include flex (flex, column, center)
+                            @include paddingx (1rem,1rem)
+                            @include paddingy (2rem, 3rem)
+                            h2 {
+                                font-size: 18px;
+                                @include flex (flex, row, center)
+                                @include paddingy (10px, 10px)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //mobile vertical
+        @media only screen and (max-width: 319px) {
+            div {
+                display: flex;
+                justify-content: center;
+                background-color: $negro;
+                #portada  {
+                    width: 200px;
+                }
+            }
+            section {
+                h1 {
+                    font-size: 12px;
+                    @include titulos ($blanco, $negro)
+                    @include flex (flex, row, center)
+                    @include paddingy (1rem, 1rem)
+                }
+                div {
+                    background-color: $blanco;
+                    article {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-around;
+                        div {
+                            @include flex (flex, column, center)
+                            @include paddingx (1rem,1rem)
+                            @include paddingy (2rem, 3rem)
+                            h2 {
+                                font-size: 12px;
+                                @include flex (flex, row, center)
+                                @include paddingy (10px, 10px)
+                            }
+                            img {
+                                width: 170px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Estios main productos 
+body {
+    .mainProductos {
+        //tablet
+        @media only screen and (min-width: 481px) and  (max-width: 1023px) {
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 18px;
+                padding-left: 3%;
+            }
+            section {
+                @include flexflow (flex, row wrap)
+                justify-content: center;
+                @include paddingy (1rem,2rem)
+                article{
+                    @include paddingy (1rem,1rem)
+                    @include paddingx (3rem,3rem)
+                    @include flex (flex, row, center)
+                    div {
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        a {
+                            text-decoration: none;
+                            color: $negro;
+                            &:hover {
+                                color: $grisoscuro;
+                            }
+                            &:active {
+                                color: $grismedio;
+                            }
+                        }
+                        h2 {
+                            font-size: 18px;
+                            @include flex (flex, row, center)
+                            @include paddingy (10px, 10px)
+                        }
+                    }
+                }
+            }
+        }
+        //mobile 
+        @media only screen and (max-width: 480px) {
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 12px;
+                padding-left: 3%;
+            }
+            section {
+                @include flexflow (flex, row wrap)
+                justify-content: center;
+                @include paddingy (1rem,2rem)
+                article{
+                    @include paddingy (1rem,1rem)
+                    @include paddingx (3rem,3rem)
+                    @include flex (flex, row, center)
+                    div {
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        img {
+                            width: 170px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $negro;
+                            &:hover {
+                                color: $grisoscuro;
+                            }
+                            &:active {
+                                color: $grismedio;
+                            }
+                        }
+                        h2 {
+                            font-size: 12px;
+                            @include flex (flex, row, center)
+                            @include paddingy (10px, 10px)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Main Nosotros
+body {
+    .mainNosotros {
+        //tablet
+        @media only screen and (min-width: 481px) and  (max-width: 1023px){
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 12px;
+                padding-left: 3%;
+            }
+            section {
+                div {
+                    @include flexflow (flex, row wrap)
+                    justify-content: center;
+                    div {
+                        @include paddingx (2rem, 2rem)
+                        @include paddingy (2rem, 2rem)
+                    }
+                }
+            }
+            div {
+                @include flex (flex, row, center)
+                p {
+                    width: 70%;
+                    font-size: 12px;
+                    @include paddingy (0rem, 2rem)
+                }
+            }
+            article {
+                @include flex (flex, column, center)
+                h2 {
+                    @include flexcenter (flex,center)
+                    font-size: 12px;
+                }
+                div {
+                    @include flexcenter (flex, center)
+                    @include paddingy (1rem, 2rem)
+                }
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 12px;
+                padding-left: 3%;
+            }
+            section {
+                div {
+                    @include flexflow (flex, row wrap)
+                    justify-content: center;
+                    div {
+                        @include paddingx (2rem, 2rem)
+                        @include paddingy (2rem, 2rem)
+                        img {
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+            div {
+                @include flex (flex, row, center)
+                p {
+                    width: 70%;
+                    font-size: 10px;
+                    @include paddingy (0rem, 2rem)
+                }
+            }
+            article {
+                @include flex (flex, column, center)
+                h2 {
+                    @include flexcenter (flex,center)
+                    font-size: 12px;
+                }
+                div {
+                    @include flexcenter (flex, center)
+                    @include paddingy (1rem, 2rem)
+                }
+            }
+        }
+    }
+}
+// main contactos
+body {
+    .mainContacto {
+        //tablet
+        @media only screen and (min-width: 481px) and  (max-width: 1023px) {
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 18px;
+                padding-left: 3%;
+            }
+            section {
+                form {
+                    @include flex (flex, column, center)
+                    padding-left: 3%;
+                    margin: 3rem;
+                    @include paddingy (2rem, 8rem)
+                    p {
+                        font-size:16px;
+                        @include paddingy (5px,5px)
+                    }
+                }
+            }
+        }
+        //mobile
+        @media only screen and (max-width: 480px) {
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 12px;
+                padding-left: 3%;
+            }
+            section {
+                form {
+                    @include flex (flex, column, center)
+                    padding-left: 3%;
+                    margin: 3rem;
+                    @include paddingy (1rem, 2rem)
+                    p {
+                        font-size:12px;
+                        @include paddingy (5px,5px)
+                    }
+                }
+            }
+        }
+    }
+}
+//main Brulag 
+body {
+    .mainBrutlag {
+        //tablet
+        @media only screen and (min-width: 650px) and  (max-width: 1023px) {
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 18px;
+                padding-left: 3%;
+            }
+            section {
+                @include flex (flex, row, center)
+                @include paddingy (3rem, 3rem)
+                div {
+                    @include paddingx (2rem,2rem)
+                    div {
+                        border: solid $negro 1px;
+                        @include paddingx (10px, 10px)
+                        h2 {
+                            font-size: 16px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            font-size: 16px;
+                            padding-bottom: 10px;
+                            padding-left: 5px;
+                        }
+                        button {
+                            color: $blanco;
+                            background-color: $negro;
+                            border-radius: 5px;
+                            margin-bottom: 10px;
+                            padding: 5px;
+                        }
+                    }
+                }
+                article {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+        //mobile
+        @media only screen and (max-width: 649px) {
+            h1 {
+                @include flexcenter (flex, center)
+                @include titulos ($blanco, $negro)
+                @include paddingy (1rem, 1rem)
+                font-size: 12px;
+                padding-left: 3%;
+            }
+            section {
+                @include flex (flex, column, center)
+                @include paddingy (1rem, 3rem)
+                div {
+                    @include paddingx (2rem,2rem)
+                    margin: 1rem;
+                    
+                    div {
+                        border: solid $negro 1px;
+                        @include paddingx (10px, 10px)
+                        h2 {
+                            font-size: 12px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            font-size: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 5px;
+                        }
+                        button {
+                            color: $blanco;
+                            background-color: $negro;
+                            border-radius: 5px;
+                            margin-bottom: 10px;
+                            padding: 5px;
+                        }
+                    }
+                }
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
